@@ -49,6 +49,7 @@ jobs:
         if [ "${{ matrix.os }}" = "ubuntu-22.04" ]; then
           sudo apt-get update
           sudo apt-get install libasound2-dev
+          sudo apt-get install libudev-dev
         fi
         ${{ env.CARGO }} build --release
         if [ "${{ matrix.os }}" = "windows-latest" ]; then
