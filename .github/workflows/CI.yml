@@ -46,6 +46,10 @@ jobs:
     - name: Build release binary
       shell: bash
       run: |
+        if [ "${{ matrix.os }}" = "ubuntu-22.04" ]; then
+          sudo apt-get update
+          sudo apt-get install libasound2-dev
+        fi
         ${{ env.CARGO }} build --release
         if [ "${{ matrix.os }}" = "windows-latest" ]; then
           cp target/release/${{ env.NAME }}.exe target/release/${{ env.NAME }}-${{ matrix.target }}.exe
