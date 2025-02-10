@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/1fca61fe-5fc7-4b90-97af-db6e7310259a" width="100%"/>
+<img src="https://github.com/user-attachments/assets/09d3e5f0-8456-4c56-b4f1-4bb0c4e5af12" width="100%"/>
 
 # shp_vis_bevy
 
